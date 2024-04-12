@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rlue.springbootinit.mapper.HealthyServiceMapper">
+
+    <resultMap id="BaseResultMap" type="com.rlue.springbootinit.model.entity.HealthyService">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="serviceName" column="serviceName" jdbcType="VARCHAR"/>
+            <result property="intro" column="intro" jdbcType="VARCHAR"/>
+            <result property="cover" column="cover" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="tel" column="tel" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,serviceName,intro,
+        cover,price,tel,
+        createTime,updateTime,isDelete
+    </sql>
+</mapper>
