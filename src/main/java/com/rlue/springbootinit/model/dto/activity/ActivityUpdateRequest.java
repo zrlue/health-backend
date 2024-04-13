@@ -18,9 +18,8 @@ import java.util.Date;
 public class ActivityUpdateRequest implements Serializable {
 
     /**
-     * 社区活动主键
+     * 主键
      */
-    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
 
     /**
@@ -53,21 +52,6 @@ public class ActivityUpdateRequest implements Serializable {
      */
     private Integer isEnd;
 
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
-
-    /**
-     * 是否删除
-     */
-    @TableLogic
-    private Integer isDelete;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

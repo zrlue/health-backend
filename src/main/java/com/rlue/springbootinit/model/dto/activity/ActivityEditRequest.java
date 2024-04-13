@@ -18,7 +18,7 @@ import java.util.Date;
 public class ActivityEditRequest implements Serializable {
 
     /**
-     * 社区活动主键
+     * 主键
      */
     private Long id;
 

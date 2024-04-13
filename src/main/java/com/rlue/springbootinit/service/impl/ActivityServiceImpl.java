@@ -37,8 +37,8 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper, Activity>
         String sortField = activityQueryRequest.getSortField();
         String sortOrder = activityQueryRequest.getSortOrder();
         QueryWrapper<Activity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq(id != null,"id",id);
-        queryWrapper.eq(StringUtils.isNotBlank(title), "title", title);
+        queryWrapper.eq(id != null, "id", id);
+        queryWrapper.like(StringUtils.isNotBlank(title), "title", title);
         queryWrapper.eq(promoterId != null, "promoterId", promoterId);
         queryWrapper.eq(isEnd != null, "isEnd", isEnd);
         queryWrapper.orderBy(SqlUtils.validSortField(sortField), sortOrder.equals(CommonConstant.SORT_ORDER_ASC),

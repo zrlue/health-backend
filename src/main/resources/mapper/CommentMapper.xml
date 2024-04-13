@@ -7,7 +7,7 @@
     <resultMap id="BaseResultMap" type="com.rlue.springbootinit.model.entity.Comment">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="content" column="content" jdbcType="VARCHAR"/>
-            <result property="commenterId" column="commenterId" jdbcType="BIGINT"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
             <result property="activityId" column="activityId" jdbcType="BIGINT"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
@@ -15,7 +15,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,content,commenterId,
+        id,content,userId,
         activityId,createTime,updateTime,
         isDelete
     </sql>

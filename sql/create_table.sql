@@ -37,7 +37,7 @@ create table activity
     time       datetime                           null comment '举办时间',
     pic        varchar(1255)                      null comment '图片',
     promoterId bigint                             null comment '发起人id',
-    isEnd      int                                null comment '是否结束',
+    isEnd      int      default 0                null comment '是否结束',
     createTime datetime default CURRENT_TIMESTAMP not null comment '创建时间',
     updateTime datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
     isDelete   tinyint  default 0                 not null comment '是否删除'
@@ -64,7 +64,7 @@ create table comment
     id          bigint auto_increment comment '评论主键'
         primary key,
     content     varchar(9999)                      not null comment '评论内容',
-    commenterId bigint                             not null comment '评论人id',
+    userId bigint                             not null comment '评论人id',
     activityId  bigint                             not null comment '活动id',
     createTime  datetime default CURRENT_TIMESTAMP not null comment '创建时间',
     updateTime  datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',

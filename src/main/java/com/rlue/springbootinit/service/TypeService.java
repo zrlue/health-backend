@@ -1,5 +1,7 @@
 package com.rlue.springbootinit.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.rlue.springbootinit.model.dto.type.TypeQueryRequest;
 import com.rlue.springbootinit.model.entity.Type;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface TypeService extends IService<Type> {
 
+    QueryWrapper<Type> getQueryWrapper(TypeQueryRequest typeQueryRequest);
 }

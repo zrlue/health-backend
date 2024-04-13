@@ -1,11 +1,9 @@
 package com.rlue.springbootinit.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.rlue.springbootinit.model.dto.activity.ActivityQueryRequest;
-import com.rlue.springbootinit.model.dto.user.UserQueryRequest;
-import com.rlue.springbootinit.model.entity.Activity;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.rlue.springbootinit.model.entity.User;
+import com.rlue.springbootinit.model.dto.activity.ActivityQueryRequest;
+import com.rlue.springbootinit.model.entity.Activity;
 
 /**
 * @author hgdc

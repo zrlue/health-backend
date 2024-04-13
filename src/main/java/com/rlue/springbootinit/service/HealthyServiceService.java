@@ -1,5 +1,8 @@
 package com.rlue.springbootinit.service;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.rlue.springbootinit.model.dto.healthyService.HealthyServiceQueryRequest;
 import com.rlue.springbootinit.model.entity.HealthyService;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface HealthyServiceService extends IService<HealthyService> {
 
+    QueryWrapper<HealthyService> getQueryWrapper(HealthyServiceQueryRequest healthyServiceQueryRequest);
 }

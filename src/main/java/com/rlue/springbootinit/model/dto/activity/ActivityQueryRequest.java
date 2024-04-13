@@ -22,9 +22,8 @@ import java.util.Date;
 public class ActivityQueryRequest extends PageRequest implements Serializable {
 
     /**
-     * 社区活动主键
+     * 主键
      */
-    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
 
     /**

@@ -21,7 +21,7 @@ public class Record implements Serializable {
     private Long id;
 
     /**
-     * 用户主键
+     * 问诊人Id
      */
     private Long userId;
 
